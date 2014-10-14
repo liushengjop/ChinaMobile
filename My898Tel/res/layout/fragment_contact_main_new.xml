@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top" />
+    <LinearLayout
+        android:id="@+id/linear_search"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_54"
+        android:paddingTop="@dimen/h_5"
+        android:paddingBottom="@dimen/h_5"
+        android:background="@color/colorebeced">
+
+
+        <!-- 头部搜索 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_24"
+            android:layout_marginRight="@dimen/w_24"
+            android:background="@drawable/contact_input_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/ib_delete"
+                android:background="@null"
+                android:hint="@string/search_contact"
+                android:inputType="text"
+                android:textColor="@color/color697a7c"
+                android:textColorHint="@color/colora6a6a6"
+                android:textSize="@dimen/size_13"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ib_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/delete_bg"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_below="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <!-- 快速搜索 -->
+
+    <com.my898tel.ui.widget.QuickAlphabeticBar
+        android:id="@+id/fast_scroller"
+        android:layout_width="22dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top"
+        android:layout_gravity="top|right|center"
+        android:layout_marginTop="0dip"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/round"
+        android:gravity="center"
+        android:padding="2dip"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

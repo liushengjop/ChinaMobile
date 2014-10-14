@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/w_24"-->
+    <!--android:layout_marginRight="@dimen/w_24"-->
+    <!--android:layout_marginTop="@dimen/h_36"-->
+    <!--android:background="@drawable/register_msg_bg" >-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical" >-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="horizontal" >-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/get_money_point"-->
+    <!--android:textColor="@color/color999999"-->
+    <!--android:textSize="@dimen/text_size_18" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical|left"-->
+    <!--android:text="@string/five_money"-->
+    <!--android:textColor="@color/colorff0103"-->
+    <!--android:textSize="@dimen/text_size_18" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical|left"-->
+    <!--android:text="@string/remark"-->
+    <!--android:textColor="@color/color999999"-->
+    <!--android:textSize="@dimen/text_size_18" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="25dp"-->
+    <!--android:gravity="center_vertical|left"-->
+    <!--android:text="@string/note4"-->
+    <!--android:textColor="@color/color999999"-->
+    <!--android:textSize="@dimen/text_size_18" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_36"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lehu_money" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_25"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user_get"
+            android:textColor="@color/color18b4ed"
+            android:textSize="@dimen/size_13"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five_money"
+            android:textColor="@color/colore02f2f"
+            android:textSize="@dimen/size_13"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tel_money"
+            android:textColor="@color/color18b4ed"
+            android:textSize="@dimen/size_13"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/note3"
+            android:textColor="@color/colorb6b6b6"
+            android:textSize="@dimen/size_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number66"
+            android:textColor="@color/colore02f2f"
+            android:textSize="@dimen/size_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/note5"
+            android:textColor="@color/colorb6b6b6"
+            android:textSize="@dimen/size_13"
+
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_click_get_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_45"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_36"
+        android:background="@drawable/submit_bg"
+        android:onClick="onClick"
+        android:text="@string/click_get_money"
+        android:textColor="@color/color697a7c"
+        android:textSize="@dimen/size_13" />
+
+</LinearLayout>

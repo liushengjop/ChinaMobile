@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_36"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="@string/plz_input_your_msg"
+        android:textColor="@color/color697a7c"
+        android:textSize="@dimen/size_13"
+        android:textStyle="bold"
+        android:background="@drawable/complain_input"/>
+
+    <Button
+        android:id="@+id/btn_click_get_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_45"
+        android:layout_marginLeft="@dimen/w_24"
+        android:layout_marginRight="@dimen/w_24"
+        android:layout_marginTop="@dimen/h_36"
+        android:background="@drawable/submit_bg"
+        android:onClick="onClick"
+        android:text="@string/submit"
+        android:textColor="@color/color697a7c"
+        android:textSize="@dimen/size_13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_36"
+        android:text="@string/comlain_tip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorb6b6b6"
+        android:textSize="@dimen/size_13"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

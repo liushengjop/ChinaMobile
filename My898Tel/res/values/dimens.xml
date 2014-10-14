@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_title">18sp</dimen>
+
+    <!-- 内边距大小 -->
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="item_list_H">60.0dip</dimen>
+    <dimen name="item_head_H">43.0dip</dimen>
+    <dimen name="item_head_W">43.0dip</dimen>
+    <!-- margin  values -->
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_7_">1dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_100">90dp</dimen>
+    <!-- textsize  values -->
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_22">22sp</dimen>
+    <dimen name="textsize_24">24sp</dimen>
+    <dimen name="textsize_30">30sp</dimen>
+    <dimen name="textsize_40">40sp</dimen>
+    <dimen name="textsize_45">45sp</dimen>
+    <dimen name="textsize_60">60sp</dimen>
+    <dimen name="textsize_80">80sp</dimen>
+
+    <!--目前定义了4种字体大小-->
+    <dimen name="size_small">14sp</dimen>
+    <dimen name="size_normal_16">16sp</dimen>
+    <dimen name="size_normal_35">35sp</dimen>
+    <dimen name="size_normal">18sp</dimen>
+    <dimen name="size_large">28dp</dimen>
+    <dimen name="size_huge">25sp</dimen>'
+    
+    
+    <!--margin 边框大小-->
+    
+    <dimen name="margin_57">57dip</dimen>
+    <dimen name="margin_37">37dip</dimen>
+    <dimen name="margin_24">24dip</dimen>
+
+    <dimen name="w_24">24dp</dimen>
+    <dimen name="w_30">30dp</dimen>
+
+
+    <!--上下距离高度-->
+    <dimen name="h_5">5dp</dimen>
+    <!--搜索框的高度-->
+    <dimen name="h_54">54dp</dimen>
+
+    <!--item的高度-->
+    <dimen name="h_75">75dp</dimen>
+
+    <dimen name="h_45">45dp</dimen>
+
+    <dimen name="h_30">30dp</dimen>
+    
+    <dimen name="h_36">36dp</dimen>
+
+    <dimen name="h_6">6dp</dimen>
+
+    <dimen name="h_11">11dp</dimen>
+    <!--item上下边距高度-->
+    <dimen name="h_14">14dp</dimen>
+
+    <dimen name="h_25">25dp</dimen>
+
+
+    
+    <!--height-->
+    <dimen name="height_85">85dp</dimen>
+
+    <!--高度14-->
+    <dimen name="height_14">14dp</dimen>
+
+    <!--38px-->
+    <dimen name="size_19">19sp</dimen>
+    <!--36px-->
+    <dimen name="size_18">18sp</dimen>
+    <!--32px-->
+    <dimen name="size_16">16sp</dimen>
+
+    <dimen name="size_15">15sp</dimen>
+    <dimen name="size_13">13sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_11.5">11.5sp</dimen>
+    <dimen name="size_8">11sp</dimen>
+    <dimen name="size_9">10sp</dimen>
+
+
+    <dimen name="call_input_height">89dp</dimen>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/call_input_height"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/w_24"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_call_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/size_large"
+            android:gravity="center"
+            android:textColor="@color/color18b4ed"
+            android:singleLine="true"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/delete_bg"
+            android:visibility="invisible"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_57"
+        android:layout_marginRight="@dimen/margin_57"
+        android:layout_marginBottom="@dimen/margin_37"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout style="@style/call_linear_style">
+
+            <ImageButton
+                android:id="@+id/ib_1"
+                style="@style/call_iv_style"
+                android:src="@drawable/one_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_2"
+                style="@style/call_iv_style"
+                android:src="@drawable/two_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_3"
+                style="@style/call_iv_style"
+                android:src="@drawable/three_bg"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/call_linear_style">
+
+             <ImageButton
+                android:id="@+id/ib_4"
+                style="@style/call_iv_style"
+                android:src="@drawable/four_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_5"
+                style="@style/call_iv_style"
+                android:src="@drawable/five_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_6"
+                style="@style/call_iv_style"
+                android:src="@drawable/six_bg"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/call_linear_style">
+
+            <ImageButton
+                android:id="@+id/ib_7"
+                style="@style/call_iv_style"
+                android:src="@drawable/seven_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_8"
+                style="@style/call_iv_style"
+                android:src="@drawable/eight_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_9"
+                style="@style/call_iv_style"
+                android:src="@drawable/nine_bg"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/call_linear_style">
+
+            <ImageButton
+                android:id="@+id/ib_x"
+                style="@style/call_iv_style"
+                android:src="@drawable/x_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_0"
+                style="@style/call_iv_style"
+                android:src="@drawable/zero_bg"/>
+
+            <ImageButton
+                android:id="@+id/ib_j"
+                style="@style/call_iv_style"
+                android:src="@drawable/j_bg"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/call_linear_style">
+
+            <ImageButton
+                style="@style/call_iv_style"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/ib_call"
+                style="@style/call_iv_style"
+                android:src="@drawable/main_call_bg"/>
+
+            <ImageButton
+                style="@style/call_iv_style"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

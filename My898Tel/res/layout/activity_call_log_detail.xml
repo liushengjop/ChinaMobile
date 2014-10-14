@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+ 
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/top_bg" >
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_bg" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ib_right"
+            android:layout_toRightOf="@+id/ib_left"
+            android:drawableLeft="@drawable/default_icon"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/colorfffdff"
+            android:textSize="@dimen/text_size_25" />
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/top_call_bg" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iv_line"
+        android:layout_below="@+id/top"
+        android:divider="#9c9c9c"
+        android:dividerHeight="0.1dp"
+        android:scrollbars="none" 
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="pull_loading_progressBar" parent="@android:style/Widget.ProgressBar.Small.Inverse">
+        <item name="android:indeterminateDrawable">@drawable/pull_to_refresh_progress_loading</item>
+        <item name="android:minWidth">23.0dip</item>
+        <item name="android:maxWidth">23.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+        <item name="android:maxHeight">23.0dip</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="str_array_call_status">
+        <item><![CDATA[<font color="#1b9bd8">来电</font>]]></item>
+        <item><![CDATA[<font color="#4FC906">去电</font>]]></item>
+        <item><![CDATA[<font color="#FF0103">未接</font>]]></item>
+    </string-array>
+</resources>

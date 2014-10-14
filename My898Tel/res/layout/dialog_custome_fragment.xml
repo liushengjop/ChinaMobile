@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:minWidth="280dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color18b4ed"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:paddingLeft="@dimen/w_24"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_16" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:minHeight="70dp"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_24"
+            android:lineSpacingExtra="@dimen/h_6"
+            android:textColor="@color/color696969"
+            android:textSize="@dimen/size_11.5" />
+
+        <LinearLayout
+            android:id="@+id/linear_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorb6b6b6"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/linear_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/w_24"
+            android:paddingRight="@dimen/w_24"
+            >
+
+            <Button
+                android:id="@+id/btn_01"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/blue_bg"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_13"
+
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/btn_03"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:background="@drawable/alert_right_btn_bg"
+                android:text="1"
+                android:textColor="@color/color5f90dd"
+                android:textSize="@dimen/size_13"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/w_24"
+            android:paddingRight="@dimen/w_24"
+            >
+
+
+            <Button
+                android:id="@+id/btn_02"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/gray_bg"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_13"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

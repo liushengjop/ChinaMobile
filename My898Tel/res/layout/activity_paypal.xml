@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/w_24"
+            android:paddingRight="@dimen/w_24" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_36"
+                android:text="@string/re_moble"
+                android:textColor="@color/color697a7c"
+                android:textSize="@dimen/size_16"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/plz_input_moble"
+                android:gravity="center_vertical"
+                >
+
+                <EditText
+                    android:id="@+id/et_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/plz_input_moble"
+                    android:inputType="number"
+                    android:textColor="@color/color697a7c"
+                    android:textSize="@dimen/size_13"
+                     />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_25"
+                android:text="@string/money"
+                android:textColor="@color/color697a7c"
+                android:textSize="@dimen/size_16"
+                 />
+
+
+            <Button
+                android:id="@+id/btn_select_money"
+                android:background="@drawable/plz_input_moble"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:hint="选择金额"
+                android:textColor="@color/color697a7c"
+                android:textSize="@dimen/size_13" />
+
+            <Button
+                android:id="@+id/btn_click_get_money"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/submit_bg"
+                android:text="@string/sure"
+                android:onClick="showWeb"
+                android:textColor="@color/color697a7c"
+                android:textSize="@dimen/size_13" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:lineSpacingExtra="@dimen/h_6"
+                android:text="@string/note2"
+                android:textColor="@color/colorb6b6b6"
+                android:textSize="@dimen/size_13"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

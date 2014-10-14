@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐呼</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cz_money">充值话费</string>
+    <string name="dial">拨号</string>
+
+    <string name="call_log">通话记录</string>
+    <string name="contact">联系人</string>
+    <string name="addresslist">通讯录</string>
+    <string name="message">信息</string>
+    <string name="setting">设置</string>
+    <string name="search_contact">搜索联系人</string>
+    <string name="write_msg">写信息</string>
+    <string name="create_new_msg">新建短信</string>
+    <string name="plz_input_msg_content">请输入短信内容</string>
+    <string name="addressee">收信人</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="user_register">用户注册</string>
+    <string name="add_short_queue">加入移动短号群</string>
+    <string name="old_user_01">享受全国通话1毛钱1分钟，市话长途统一价</string>
+    <string name="new_user_get">短号开通成功以后,马上赠送</string>
+    <string name="tel_money">话费</string>
+    <string name="bd_register">本地短号申请</string>
+    <string name="sn_register">省内短号申请</string>
+    <string name="note1">短号申请时,会发短信到10086,并回复Y确认开通。本地短号仅限本市使用。省内短号仅限广东省内使用</string>
+    <string name="note2">此卡位移动公司发行，卡号17位密码18位，所填金额必须和充值卡面额一致，否则由此卡带来的损失,本公司概不负责</string>
+    <string name="note3">(拔通888赠送平台,按</string>
+    <string name="number66">66#</string>
+    <string name="note5">输入手机号码,领取话费。)</string>
+    <string name="note4">新用户开通，马上赠送5元话费。拔通888赠送平台，按66# 输入手机号码，领取话费。享受全国通话1毛钱1分钟，市话长途统一价。</string>
+    <string name="get_money">赠送话费</string>
+    <string name="get_money_point">赠送话费 ：</string>
+    <string name="click_get_money">接通888语音平台</string>
+    <string name="remark">备注内容 ：</string>
+    <string name="five_money">5元</string>
+    <string name="search_cornet">查询短号</string>
+    <string name="cancle_cornet">取消短号</string>
+
+    <string name="check_version">检查更新</string>
+    <string name="tip_alert">提示信息</string>
+    <string name="tip_plz_input_complet">请填写完整</string>
+    <string name="cancle_cornet_cotent">尊敬的用户:\n您是否确认取消短号</string>
+    <string name="over_point">查询余额</string>
+    <string name="over_point_unit">%1s 元</string>
+    <string name="recommend_friend">推荐给好友</string>
+    <string name="help">帮助</string>
+    <string name="about">关于我们</string>
+    <string name="recharge">充值</string>
+    <string name="china_mobile_recharge">中国移动充值</string>
+    <string name="paypal_recharge">支付宝充值</string>
+    <string name="internet_banking_rechare">网银充值</string>
+
+    <string name="plz_input_your_msg">请输入你的反馈信息</string>
+    <string name="complain">投诉</string>
+
+    <string name="comlain_tip">提交投诉内容，需要在有网络的条件下才能提交</string>
+    <string name="submit">提交</string>
+    <!-- 本地申请 -->
+    <string name="bd_register_str">SQDH#13602590883#BD</string>
+    <!-- 省内申请 -->
+    <string name="sn_register_str">SQDH#13602590883#SN</string>
+    <string name="call_need_add">898</string>
+    <!-- 电话号码 -->
+    <string name="tel">10086</string>
+    <string name="str_lable_title_01">通话</string>
+    <string name="str_main_call_log_01">Settings</string>
+    <string name="str_public_get_Date">MM月dd日</string>
+    <string name="sent_cancle_cornet">取消短号</string>
+    <string name="china_moble_title">移动充值卡</string>
+    <string name="re_moble">充值手机号码</string>
+    <string name="plz_input_moble">请输入手机号</string>
+    <string name="re_card">充值卡卡号</string>
+    <string name="plz_input_17_card">请输入17位移动充值卡卡号</string>
+    <string name="pwd">密码</string>
+    <string name="plz_input_18_pwd">请输入18位移动充值卡密码</string>
+    <string name="money">金额/元</string>
+    <string name="sure">确定</string>
+    <string name="complete">完成</string>
+
+    <!-- 渠道商 也就是我们的所谓代理商 -->
+    <string name="channel">test1</string>
+    <string name="str_public_ok">确认</string>
+    <string name="str_public_yes">是</string>
+    <string name="str_public_no">否</string>
+    <string name="str_public_quit">退出</string>
+    <string name="str_public_back">返回</string>
+    <string name="str_public_cancel">取消</string>
+    <string name="str_public_delete">删除</string>
+    <string name="str_lable_selection01">软件拨号</string>
+    <string name="str_lable_selection02">本地拨号</string>
+    <string name="str_lable_01">再按一次退出程序</string>
+    <string name="str_lable_02">中国移动</string>
+    <string name="str_lable_0３">请稍等</string>
+    <string name="search_ing">查询中。</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="phone_incoming">来电</string>
+    <string name="phone_outcoming">拨出</string>
+    <string name="phone_no_recive">未接</string>
+
+    <string name="plz_select_money">请选择充值金额</string>
+
+
+    <string name="url01">http://zz.1110086.com/yeepay/yibao.jsp?telNo=%1s</string>
+
+
+    <string name="url02">http://zz.1110086.com/webapi/paya.jsp?userid=%1s
+      </string>
+
+    <string name="url03">http://zz.1110086.com/alipay/alipayto.jsp?subject=%1s
+        </string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/et_addressee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@null"
+    android:paddingLeft="@dimen/padding_5"
+    android:paddingRight="@dimen/padding_5"
+    android:textColor="@color/color697a7c"
+    android:digits="0123456789"
+    android:inputType="number"
+    android:textStyle="bold"
+    android:textSize="@dimen/size_15" />

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorfffdff">#fffdff</color>
+    <color name="color1b9bd8">#1b9bd8</color>
+    <color name="color333333">#333333</color>
+    <color name="color4fc906">#4fc906</color>
+    <color name="colorff0103">#ff0103</color>
+    <color name="colorf74c31">#f74c31</color>
+    <color name="color999999">#999999</color>
+    <color name="colorb4b4b4">#b4b4b4</color>
+    <color name="color139bd9">#139bd9</color>
+
+    <!-- 蓝色 -->
+    <color name="color5f90dd">#5f90dd</color>
+
+    <color name="color727272">#727272</color>
+
+
+    <color name="colorf5f5f5">#f5f5f5</color>
+    <!--头部导航蓝色-->
+    <color name="color18b4ed">#18b4ed</color>
+
+    <color name="colorcdeafa">#cdeafa</color>
+    
+    <color name="colordedf10">#dedf10</color>
+    <color name="colordedfe0">#dedfe0</color>
+
+    <color name="color697a7c">#697a7c</color>
+
+    <color name="colorb6b6b6">#b6b6b6</color>
+
+    <color name="colora6a6a6">#a6a6a6</color>
+
+    <color name="colorafafaf">#afafaf</color>
+
+    <color name="colorebeced">#ebeced</color>
+    
+    <color name="colore02f2f">#e02f2f</color>
+
+    <color name="color696969">#696969</color>
+    
+    <color name="colord9d9d9">#d9d9d9</color>
+</resources>

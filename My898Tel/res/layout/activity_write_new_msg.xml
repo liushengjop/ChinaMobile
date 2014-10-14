@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/h_54"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorf5f5f5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收信人："
+            android:layout_marginLeft="@dimen/w_24"
+            android:textColor="@color/color697a7c"
+            
+
+            android:textSize="@dimen/size_15"/>
+
+        <com.my898tel.ui.widget.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/flowLayout_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            f:horizontalSpacing="20dp"
+            f:verticalSpacing="12dip" />
+
+        <ImageButton
+            android:id="@+id/ib_select_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w_24"
+            android:background="@null"
+
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_bg" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         />
+
+    <ImageView
+        android:id="@+id/iv_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/bot"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/padding_10">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_sent_content"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@drawable/input_bg"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="@string/plz_input_msg_content"-->
+    <!--android:inputType="textMultiLine"-->
+    <!--android:paddingLeft="@dimen/padding_5"-->
+    <!--android:paddingRight="@dimen/padding_5"-->
+    <!--android:textColor="@color/color333333"-->
+    <!--android:textSize="@dimen/text_size_18" />-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/ib_sent_msg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_10"-->
+    <!--android:background="@null"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:src="@drawable/sent_msg_bg" />-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/h_54"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorf5f5f5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_sent_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/w_24"
+            android:maxLines="5"
+            android:background="@drawable/contact_input_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/plz_input_msg_content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/color697a7c"
+            android:textColorHint="@color/colora6a6a6"
+            android:textSize="@dimen/size_13"
+             />
+
+        <Button
+            android:id="@+id/ib_sent_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/w_24"
+            android:layout_marginRight="@dimen/w_24"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:text="发送"
+            android:textColor="@color/color697a7c"
+            android:textSize="@dimen/size_16" />
+    </LinearLayout>
+
+</LinearLayout>

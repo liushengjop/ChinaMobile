@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorf5f5f5"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear_china_moble"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/grayandwhite"
+        android:paddingLeft="@dimen/padding_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/re01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/china_mobile_recharge"
+            android:textColor="@color/color333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_13" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/w_24"
+            android:src="@drawable/arrow_bg" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorf5f5f5"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linear_network"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/grayandwhite"
+        android:paddingLeft="@dimen/padding_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/re02" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/margin_5"
+            android:text="@string/internet_banking_rechare"
+            android:textColor="@color/color333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_13" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/w_24"
+            android:src="@drawable/arrow_bg" />
+        
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:background="@color/colorf5f5f5"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/linear_paypal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/grayandwhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_marginRight="@dimen/margin_10"
+            android:src="@drawable/re03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/paypal_recharge"
+            android:textColor="@color/color333333"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/w_24"
+            android:src="@drawable/arrow_bg" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
