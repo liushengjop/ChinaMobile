@@ -57,17 +57,17 @@
     <dimen name="size_normal_35">35sp</dimen>
     <dimen name="size_normal">18sp</dimen>
     <dimen name="size_large">28dp</dimen>
-    <dimen name="size_huge">25sp</dimen>'
+    <dimen name="size_huge">25sp</dimen>
     
     
     <!--margin 边框大小-->
     
-    <dimen name="margin_57">57dip</dimen>
-    <dimen name="margin_37">37dip</dimen>
+    <dimen name="margin_57">30dip</dimen>
+    <dimen name="margin_37">15dip</dimen>
     <dimen name="margin_24">24dip</dimen>
 
-    <dimen name="w_24">24dp</dimen>
-    <dimen name="w_30">30dp</dimen>
+    <dimen name="w_24">12dp</dimen>
+    <dimen name="w_30">15dp</dimen>
 
 
     <!--上下距离高度-->
@@ -115,5 +115,5 @@
     <dimen name="size_9">10sp</dimen>
 
 
-    <dimen name="call_input_height">89dp</dimen>
+    <dimen name="call_input_height">59dp</dimen>
 </resources>

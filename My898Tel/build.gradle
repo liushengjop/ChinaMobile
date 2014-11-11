@@ -1,4 +1,6 @@
-apply plugin: 'android'
+import com.android.builder.core.DefaultManifestParser
+
+apply plugin: 'com.android.application'
 
 dependencies {
     compile fileTree(dir: 'libs', include: '*.jar')
@@ -6,14 +8,13 @@ dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile project(':Android-PullToRefresh')
 }
-
 android {
     compileSdkVersion 19
-    buildToolsVersion '20.0.0'
+    buildToolsVersion "21.1.1"
     defaultConfig {
         applicationId 'com.my898tel'
-        minSdkVersion 8
-        targetSdkVersion 17
+        minSdkVersion 10
+        targetSdkVersion 19
         versionCode 1
         versionName '1.0.0'
     }
@@ -23,7 +24,8 @@ android {
     }
     signingConfigs {
         myConfig {
-            storeFile file("${getProjectDir()}/keystory/android.keystore")
+            //file(getProjectDir().getParent() + '/yorkit/android.keystore')
+            storeFile file("${getProjectDir().getParent()}/keystory/android.keystore")
             keyAlias 'android.keystore'
             keyPassword '123456'
             storePassword '123456'
@@ -32,77 +34,102 @@ android {
     productFlavors {
         appRelease {
             applicationId 'com.my898tel'
+            versionCode 1
+            versionName '1.0.0'
         }
-    }
-    sourceSets {
-        main {
-            manifest.srcFile 'AndroidManifest.xml'
-            java.srcDirs = ['src']
-            resources.srcDirs = ['src']
-            aidl.srcDirs = ['src']
-            renderscript.srcDirs = ['src']
-            res.srcDirs = ['res']
-            assets.srcDirs = ['assets']
-        }
-
-        // Move the tests to tests/java, tests/res, etc...
-        instrumentTest.setRoot('tests')
-
-        // Move the build types to build-types/<type>
-        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
-        // This moves them out of them default location under src/<type>/... which would
-        // conflict with src/ being used by the main source set.
-        // Adding new build types or product flavors should be accompanied
-        // by a similar customization.
-        debug.setRoot('build-types/debug')
-        release.setRoot('build-types/release')
     }
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             debuggable false
-            zipAlign true
-            jniDebugBuild false
+            zipAlignEnabled true
+            jniDebuggable false
             signingConfig signingConfigs.myConfig
         }
         debug {
-            runProguard false
+            minifyEnabled false
             debuggable true
-            jniDebugBuild true
+            jniDebuggable false
+            signingConfig signingConfigs.myConfig
+        }
+    }
+    /**资源设置*/
+    sourceSets {
+        main {
+            //jniLibs.srcDirs = ['libs']
         }
     }
 }
-
-
-
+//替换AndroidManifest.xml的UMENG_CHANNEL_VALUE字符串为渠道名称 By Remex Huang
 android.applicationVariants.all { variant ->
-
     variant.processManifest.doLast {
-        def projectDir = getProjectDir();
-
-        def flavorsName = variant.productFlavors[0].name
-        if (flavorsName.contains("testRelease")) {
-
+        //${buildDir}是指build文件夹
+        //${variant.dirName}是flavor/buildtype，例如GooglePlay/release，运行时会自动生成
+        //下面的路径是类似这样：build/manifests/GooglePlay/release/AndroidManifest.xml
+        def manifestFile = "${buildDir}/intermediates/manifests/full/${variant.dirName}/AndroidManifest.xml"
+//        def manifestFile = "${buildDir}/manifests/${variant.dirName}/AndroidManifest.xml"
+        def brandVersion = variant.buildType.name
+        def brandVersionString = brandVersion.toString()
+        def flavorName = variant.productFlavors[0].name;
+        def appName = "@string/app_name"
+        def iconName = "@drawable/ic_launcher"
+        def baidu_push_api_key = "sGEAhjuIgpWXK5RnfQf43S09"
+        println "brandVersion---->" + variant.buildType + "    " + brandVersionString
+        // *** SET APP NAME ***
+        if (flavorName.contains("appRelease")) {
+            appName = "@string/app_name"
+            iconName = "@drawable/ic_launcher"
+            baidu_push_api_key = "sGEAhjuIgpWXK5RnfQf43S09"
+        } else {
+            appName = "@string/app_name"
+            iconName = "@drawable/ic_launcher"
+            baidu_push_api_key = "sGEAhjuIgpWXK5RnfQf43S09"
         }
+        println "...hey you are in the copy task"
 
-        def manifestFile = "${getBuildDir()}/intermediates/manifests/${variant.dirName}/AndroidManifest.xml"
+        //  println "--->>>" + manifestFile
+        //将字符串UMENG_CHANNEL_VALUE替换成flavor的名字
+        println "appName-->>" + appName
+        def intermediates = new File(manifestFile).getText('UTF-8').replaceAll("BAIDU_PUSH_API_KEY", baidu_push_api_key)
+        println "---------------------------------------------------------"
 
-        println "projectDir path===========>" + projectDir
 
-        println "manifestFile path=========>" + manifestFile
+        new File(manifestFile).write(intermediates, 'UTF-8')
+        //将此次flavor的AndroidManifest.xml文件指定为我们修改过的这个文件
+        variant.processResources.manifestFile = file("${buildDir}/intermediates/manifests/full/${variant.dirName}/AndroidManifest.xml")
+        /**包名修改*/
+        def versionCode = variant.productFlavors[0].versionCode;
+        def versionName = variant.productFlavors[0].versionName;
 
-        println "variant.dirName path=======>" + variant.dirName
-        //修改manifestFile 文件的方法
-//        //将字符串UMENG_CHANNEL_VALUE替换成flavor的名字
-//        def updatedContent = new File(manifestFile).getText('UTF-8').
-//                replaceAll("APP_NAME", app_name).
-//                replace("@drawable/testaicon", app_icon).
-//                replace("API_KEY", api_key)
-//        new File(manifestFile).write(updatedContent, 'UTF-8')
-//
-//        //将此次flavor的AndroidManifest.xml文件指定为我们修改过的这个文件
-//        variant.processResources.manifestFile = file(manifestFile)
-
+        println brandVersionString
+        /*发布版本才操作*/
+        if (brandVersionString.equals("release")) {
+            def fileName = null
+            def networkVersion = "1.0.0"
+            println(flavorName)
+            if (flavorName.contains("appRelease")) {
+                fileName = flavorName.replace("appRelease",getDate() + "_ChinaMobile_" + versionName + "_(" + versionCode + ")_" + networkVersion + ".apk")
+            } else if (flavorName.contains("demoRelease")) {
+                fileName = flavorName.replace("Release", "_" +getDate() + "ChinaMobile_" + versionName + "_(" + versionCode + ")_" + networkVersion + ".apk")
+            } else {
+                fileName = flavorName.replace("appRelease", "_" +getDate() + "ChinaMobile_" + versionName + "_(" + versionCode + ")_" + networkVersion + ".apk")
+            }
+            //println flavorName
+            def file = variant.outputFile
+            // println file
+            def manifestParser = new DefaultManifestParser()
+            def wmgVersionCode = manifestParser.getVersionCode(android.sourceSets.main.manifest.srcFile)
+            println wmgVersionCode
+            //variant.outputFile = new File(file.parent, file.name.replace("-release.apk", "_" + wmgVersionCode + ".apk"))
+            variant.outputFile = new File(file.parent, fileName)
+        }
     }
+}
+/*日期获取和格式化*/
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
 }

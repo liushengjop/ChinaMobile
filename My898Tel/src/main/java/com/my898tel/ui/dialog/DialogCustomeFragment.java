@@ -44,7 +44,7 @@ public class DialogCustomeFragment extends DialogFragment {
 
 
     //防止构造 只能通过builder来创建
-    private DialogCustomeFragment() {
+    public DialogCustomeFragment() {
 
     }
 

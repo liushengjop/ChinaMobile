@@ -215,10 +215,10 @@
         <!-- push结束 -->
 
 
-        <!-- 在百度开发者中心查询应用的API Key -->
+        <!-- 在百度开发者中心查询应用的API Key  sGEAhjuIgpWXK5RnfQf43S09 -->
         <meta-data
             android:name="api_key"
-            android:value="sGEAhjuIgpWXK5RnfQf43S09" />
+            android:value="BAIDU_PUSH_API_KEY" />
 
         <!-- 百度移动运用统计 begin -->
         <!-- 您从百度网站获取的APP KEY -->
@@ -257,8 +257,9 @@
         <meta-data
             android:name="BaiduMobAd_WIFI_LOCATION"
             android:value="true" />
-
         <!-- end -->
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data android:name="baidu_push_api_key" android:value="BAIDU_PUSH_API_KEY" />
     </application>
 
 </manifest>
