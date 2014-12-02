@@ -128,13 +128,6 @@ public class NetWorkUnit extends JsonObjectRequest {
     @Override
 	protected void deliverResponse(JSONObject response) {
 		
-		try {
-			response.put("url", mUrl);
-			response.put("tag", mTag);
-		} catch (JSONException e1) {
-			e1.printStackTrace();
-		}
-
 		super.deliverResponse(response);
 	}
 

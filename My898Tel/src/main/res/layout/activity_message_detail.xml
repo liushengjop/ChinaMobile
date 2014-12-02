@@ -33,7 +33,7 @@
             android:layout_toLeftOf="@+id/ib_right"
             android:layout_toRightOf="@+id/ib_left"
             android:drawablePadding="3dp"
-            android:gravity="center_vertical"
+            android:gravity="center"
             android:singleLine="true"
             android:textColor="@color/colorfffdff"
             android:textSize="@dimen/size_16" />

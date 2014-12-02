@@ -5,6 +5,11 @@
     android:layout_height="53dp"
     android:background="@color/color18b4ed">
 
+    <EditText
+        android:id="@+id/et_hide_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
     <ImageButton
         android:id="@+id/ib_left"
         android:layout_width="wrap_content"
@@ -30,8 +35,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textColor="@color/colorfffdff"
-            android:textSize="@dimen/size_19"
-             />
+            android:textSize="@dimen/size_19" />
 
         <TextView
             android:id="@+id/tv_over"
@@ -54,7 +58,7 @@
         android:scaleType="fitCenter"
         android:text="@string/setting"
         android:textSize="@dimen/size_16"
-        android:textColor="@android:color/white"
+        android:textColor="@drawable/color_setting"
         />
 
 </RelativeLayout>

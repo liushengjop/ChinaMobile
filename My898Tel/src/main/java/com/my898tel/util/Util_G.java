@@ -67,28 +67,21 @@ public class Util_G {
         Log.d(clas.getSimpleName(), message);
     }
 
-    private static Toast myToast = null;
+    Toast myToast;
 
     /**
      * 显示Toast
      */
     public static void DisplayToast_(String str, int length) {
         // Toast.makeText(this, str, Toast.LENGTH_SHORT).show();//会累计
-        if (myToast == null) {
-            myToast = new Toast(UIApplication.getInstance());
-        }
-        myToast.setDuration(length);
+        Toast myToast = Toast.makeText(UIApplication.getInstance(), str, length);
         myToast.show();
         // 实例化一个Toast对象
     }
 
     public static void DisplayToast(int resId, int length) {
         // TODO Auto-generated method stub
-        if (myToast == null) {
-            myToast = new Toast(UIApplication.getInstance());
-        }
-        myToast.setText(UIApplication.getInstance().getString(resId));
-        myToast.setDuration(length);
+        Toast myToast = Toast.makeText(UIApplication.getInstance(), UIApplication.getInstance().getString(resId), length);
         myToast.show();
     }
 
@@ -387,6 +380,14 @@ public class Util_G {
             index += news.length();
         }
         return content;
+    }
+
+    //判断，返回布尔值
+    public static boolean isMobileNO(String mobiles) {
+        Pattern p = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$");
+        Matcher m = p.matcher(mobiles);
+
+        return m.matches();
     }
 
     public static int dip2px(float dipValue) {

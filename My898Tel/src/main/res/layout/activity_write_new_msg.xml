@@ -89,7 +89,7 @@
     <!--android:inputType="textMultiLine"-->
     <!--android:paddingLeft="@dimen/padding_5"-->
     <!--android:paddingRight="@dimen/padding_5"-->
-    <!--android:textColor="@color/color333333"-->
+    <!--android:textColor="@color/color_setting"-->
     <!--android:textSize="@dimen/text_size_18" />-->
 
     <!--<ImageButton-->

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:minHeight="50dp"
     android:gravity="center_vertical"
-    android:background="@drawable/whiteandgray"
+    android:background="@drawable/whiteandblue"
     android:orientation="vertical" >
 
     <TextView
@@ -17,13 +17,13 @@
         android:textColor="@color/color999999"
         android:textSize="@dimen/text_size_16" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/w_24"
-        android:background="@color/colorf5f5f5"
-        android:src="@drawable/line"
-        />
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/w_24"-->
+        <!--android:background="@color/colorf5f5f5"-->
+        <!--android:src="@drawable/line"-->
+        <!--/>-->
 
     <ImageView
         android:layout_width="match_parent"
