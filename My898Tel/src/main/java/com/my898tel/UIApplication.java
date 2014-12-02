@@ -100,6 +100,9 @@ public class UIApplication extends FrontiaApplication {
      */
     public static void callPhone(Context context, String phone) {
 
+        if(phone==null || TextUtils.isEmpty(phone)){
+            return;
+        }
         if (!Util_file.getIsRunApplication(context).equals("true")) {
             Toast.makeText(context, "软件已经被停用", Toast.LENGTH_SHORT).show();
             return;

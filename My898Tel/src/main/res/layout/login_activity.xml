@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/h_45"
         android:layout_marginTop="@dimen/h_36"
-        android:background="@drawable/grayandwhite"
+        android:background="@drawable/grayandblue"
         android:gravity="center_vertical">
 
         <TextView
@@ -72,7 +72,7 @@
         android:id="@+id/linear_sn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/h_45"
-        android:background="@drawable/grayandwhite"
+        android:background="@drawable/grayandblue"
         android:gravity="center_vertical">
 
         <TextView

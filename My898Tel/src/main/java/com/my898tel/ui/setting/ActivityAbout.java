@@ -28,9 +28,16 @@ public class ActivityAbout extends BaseActivity {
         super.onCreate(arg0);
         setContentView(R.layout.activity_about);
 
-        for (int i = 1;i<=8;i++){
-            addListener(i);
-        }
+//        for (int i = 1;i<=1;i++){
+//            addListener(i);
+//        }
+
+        findViewById(R.id.relat_01).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         setTitleNoRightBtn(R.string.about);
     }
 
@@ -59,11 +66,9 @@ public class ActivityAbout extends BaseActivity {
                     ImageView iv_line = (ImageView)findViewById(line_id);
                     if(tv.getVisibility() == View.VISIBLE){
                         tv.setVisibility(View.GONE);
-                        iv.setImageResource(R.drawable.down);
                         iv_line.setVisibility(View.VISIBLE);
                     }else{
                         tv.setVisibility(View.VISIBLE);
-                        iv.setImageResource(R.drawable.up);
                         iv_line.setVisibility(View.GONE);
                     }
 

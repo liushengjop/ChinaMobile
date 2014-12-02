@@ -25,7 +25,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
                 android:layout_marginTop="@dimen/h_36"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -59,7 +59,7 @@
                 android:id="@+id/linear_cz"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -90,7 +90,7 @@
                 android:id="@+id/linear_search_over"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -133,7 +133,7 @@
                 android:id="@+id/linear_search_cornet"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -163,7 +163,7 @@
                 android:id="@+id/linear_cancle_cornet"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
 
@@ -195,7 +195,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
                 android:layout_marginTop="@dimen/h_36"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -224,7 +224,7 @@
                 android:id="@+id/linear_share"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -253,7 +253,7 @@
                 android:id="@+id/relat_complain"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -284,7 +284,7 @@
                 android:id="@+id/relat_help"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView
@@ -314,7 +314,7 @@
                 android:id="@+id/relat_about"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h_45"
-                android:background="@drawable/grayandwhite"
+                android:background="@drawable/grayandblue"
                 android:gravity="center_vertical">
 
                 <TextView

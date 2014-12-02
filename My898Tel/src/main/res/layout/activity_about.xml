@@ -1,414 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:orientation="vertical">
-
-        <include layout="@layout/top" />
+    android:orientation="vertical">
 
 
-        <RelativeLayout
-            android:id="@+id/relat_01"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:layout_marginTop="@dimen/h_36"
-            android:background="@color/colorf5f5f5">
+    <include layout="@layout/top" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="什么是乐呼？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
+    <!--<ScrollView-->
 
-            <ImageView
-                android:id="@+id/iv_01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_01"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="乐呼是一款基于短号群的通话软件，用户享受群内免费通话，群外通话全国1毛钱1分钟，市话长途统一价。目前支持Android系统手机"
-            android:textColor="#b6b6b6"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <ImageView
-            android:id="@+id/iv_line1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/relat_02"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:background="@color/colorf5f5f5">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="什么是短号集群网？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_02"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="短号集群网是由中国移动率先推出的短号免费通话，用户的短号均由6开头的号码。
-短号分为：本地5元短号与省内10元短号，本地短号仅限本市使用，省内短号仅限本省使用。目前暂时只支持深圳的移动用户申请短号，,需要了解更多短号详情请您拔打客服热线。
-"
-            android:textColor="#b6b6b6"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <ImageView
-            android:id="@+id/iv_line2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
-
-
-        <RelativeLayout
-            android:id="@+id/relat_03"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:background="@color/colorf5f5f5">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="乐呼收费吗？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_03"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_03"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="乐呼用户享受群内免费通话，群外通话全国1毛钱1分钟，市话长途统一价。新用户注册送5元话费体验通话。"
-            android:textColor="#b6b6b6"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <ImageView
-            android:id="@+id/iv_line3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
-
-
-        <RelativeLayout
-            android:id="@+id/relat_04"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-
-            android:background="@color/colorf5f5f5">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="乐呼与网络电话有什么不同？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_04"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_04"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="#b6b6b6"
-            android:text="网络电话是一种功能有限的旧的通话方式，一般局限于WIFI网络环境下通话，如果在GPRS网络环境下通话会产生相应的流量费用。乐呼不需要网络就能通话、直拔显示本机号码、任何时段都能拔通、通话清晰稳定。"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <!--<ImageView-->
-        <!--android:id="@+id/iv_line4"-->
         <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:background="@color/colorf5f5f5"-->
-        <!--android:paddingLeft="@dimen/w_24"-->
-        <!--android:src="@drawable/line" />-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@android:color/white">-->
 
-
-        <RelativeLayout
-            android:id="@+id/relat_05"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:layout_marginTop="@dimen/h_30"
-            android:background="@color/colorf5f5f5">
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/about_icon"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="我能用乐呼做什么？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
+                android:textSize="@dimen/size_15"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/h_11"
+                android:textColor="@color/colorb6b6b6"
+                android:text="乐乎V1.0"/>
 
-            <ImageView
-                android:id="@+id/iv_05"
+            <RelativeLayout
+                android:id="@+id/relat_01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_45"
+                android:layout_marginTop="@dimen/h_25"
+                android:background="@drawable/grayandblue">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/w_24"
+                    android:text="使用条款和隐私政策"
+                    android:textColor="@color/color697a7c"
+                    android:textSize="@dimen/size_13"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/w_24"
+                    android:src="@drawable/arrow_bg" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/w_24"
                 android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_05"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="#b6b6b6"
-            android:text="您可以通过乐呼与家人、好友进行免费通话，只需要加入短号群。还可以通过乐呼（群外全国通话1毛钱1分钟，市话长途统一价）省下好多话费，特别是打长途的时候。"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="@dimen/h_6"
+                android:text="乐呼是一款基于短号群的通话软件，用户享受群内免费通话，群外通话全国1毛钱1分钟，市话长途统一价。目前支持Android系统手机"
+                android:textColor="#b6b6b6"
+                android:textSize="@dimen/size_13"
+                android:visibility="gone" />
 
 
-        <ImageView
-            android:id="@+id/iv_line5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
 
 
-        <RelativeLayout
-            android:id="@+id/relat_06"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:background="@color/colorf5f5f5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_24"
+                android:layout_marginTop="@dimen/h_25"
+                android:text="官网：www.ailehu.com.cn  "
+                android:textColorLink="@color/color696969"
+                android:autoLink="web"
+                android:textColor="@color/color696969"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_24"
+                android:layout_marginTop="@dimen/h_11"
+                android:text="客服固话：0755-88374546"
+                android:textColorLink="@color/color696969"
+                android:autoLink="phone"
+                android:textColor="@color/color696969"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_24"
+                android:layout_marginTop="@dimen/h_11"
+                android:text="客服短号：666 "
+                android:autoLink="phone"
+                android:textColor="@color/color696969"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/w_24"
+                android:layout_marginTop="@dimen/h_11"
+                android:text="客服QQ ：1972742051"
+                android:textColorLink="@color/color696969"
+                android:autoLink="all"
+                android:textColor="@color/color696969"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="使用乐呼会产生多少流量？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_06"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_06"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="#b6b6b6"
-            android:text="使用乐呼通话是不需要网络的，只有在充值乐呼话费、查询余额的时候才需要使用网络，所以使用乐呼基本不会产生流量。"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/size_15"
+                android:gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/h_11"
+                android:layout_marginTop="@dimen/h_11"
+                android:textColor="@color/colorb6b6b6"
+                android:layout_gravity="bottom"
+                android:text="新际科技 版权所有"/>
 
 
-        <ImageView
-            android:id="@+id/iv_line6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
+        </LinearLayout>
+</LinearLayout>
 
-
-        <RelativeLayout
-            android:id="@+id/relat_07"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:background="@color/colorf5f5f5">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="如何注册乐呼？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_07"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_07"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="#b6b6b6"
-            android:text="请在乐呼设置页面，选择“用户注册”=》“赠送话费”目前暂时只支持深圳移动用户注册乐呼。"
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <ImageView
-            android:id="@+id/iv_line7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorf5f5f5"
-            android:paddingLeft="@dimen/w_24"
-            android:src="@drawable/line" />
-
-        <RelativeLayout
-            android:id="@+id/relat_08"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/h_45"
-            android:background="@color/colorf5f5f5">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/w_24"
-                android:text="乐呼怎么拔号？"
-                android:textColor="@color/color697a7c"
-                android:textSize="@dimen/size_13"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/iv_08"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/w_24"
-                android:src="@drawable/down" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_08"
-            android:layout_marginLeft="@dimen/w_24"
-            android:layout_marginRight="@dimen/w_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:textColor="#b6b6b6"
-            android:text="乐呼拔号分为：“手机拔号”与“软件内拔号”；手机拔号会弹窗：手机拔号会弹窗："
-            android:lineSpacingExtra="@dimen/h_6"
-            android:textSize="@dimen/size_13"
-            android:visibility="gone" />
-
-
-        <!--<ImageView-->
-        <!--android:id="@+id/iv_line8"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:background="@color/colorf5f5f5"-->
-        <!--android:paddingLeft="@dimen/w_24"-->
-        <!--android:src="@drawable/line" />-->
-
-
-    </LinearLayout>
-
-</ScrollView>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:background="@drawable/whiteandgray"
+    android:background="@drawable/whiteandblue"
     android:minHeight="@dimen/h_75"
     android:orientation="vertical">
 
@@ -13,6 +13,7 @@
         android:layout_height="@dimen/h_30"
         android:background="@color/colordedfe0"
         android:paddingLeft="@dimen/w_24"
+        android:gravity="center_vertical"
         android:textColor="@color/color697a7c"
         android:textSize="@dimen/size_18"
         android:visibility="gone"

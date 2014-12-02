@@ -20,16 +20,22 @@
     <string name="select_contact">选择联系人</string>
     <string name="user_register">用户注册</string>
     <string name="add_short_queue">加入移动短号群</string>
-    <string name="old_user_01">享受全国通话1毛钱1分钟，市话长途统一价</string>
-    <string name="new_user_get">短号开通成功以后,马上赠送</string>
+    <string name="old_user_01">享受群内免费通话，群外通话全国1毛钱1分钟，市话长途统一价。</string>
+    <string name="new_user_get">短号成功开通，赠送</string>
     <string name="tel_money">话费</string>
-    <string name="bd_register">本地短号申请</string>
+    <string name="bd_register">本市短号申请</string>
     <string name="sn_register">省内短号申请</string>
-    <string name="note1">短号申请时,会发短信到10086,并回复Y确认开通。本地短号仅限本市使用。省内短号仅限广东省内使用</string>
-    <string name="note2">此卡位移动公司发行，卡号17位密码18位，所填金额必须和充值卡面额一致，否则由此卡带来的损失,本公司概不负责</string>
+    <string name="note1">
+短号申请时，会发送短信到10086，并回复Y确认开通。
+本市短号5元/月租，省内短号10元/月租。
+本市短号在本市使用，省内短号在全省使用。
+</string>
+    <string name="note2">此卡为移动公司发行，卡号17位密码18位，所填金额必须和充值卡面额一致，否则由此带来的损失,本公司概不负责</string>
+    <string name="note22">选择“确定”将通过银行卡支付，由银联提供安全支付，请放心使用</string>
+    <string name="note23">选择“确定”将通过支付宝支付，由支付宝提供安全支付，请放心使用</string>
     <string name="note3">(拔通888赠送平台,按</string>
     <string name="number66">66#</string>
-    <string name="note5">输入手机号码,领取话费。)</string>
+    <string name="note5">输入手机号码,领取话费)</string>
     <string name="note4">新用户开通，马上赠送5元话费。拔通888赠送平台，按66# 输入手机号码，领取话费。享受全国通话1毛钱1分钟，市话长途统一价。</string>
     <string name="get_money">赠送话费</string>
     <string name="get_money_point">赠送话费 ：</string>
@@ -42,7 +48,7 @@
     <string name="check_version">检查更新</string>
     <string name="tip_alert">提示信息</string>
     <string name="tip_plz_input_complet">请填写完整</string>
-    <string name="cancle_cornet_cotent">尊敬的用户:\n您是否确认取消短号</string>
+    <string name="cancle_cornet_cotent">取消短号，省话费将不再继续。是否取消？</string>
     <string name="over_point">查询余额</string>
     <string name="over_point_unit">%1s 元</string>
     <string name="recommend_friend">推荐给好友</string>
@@ -90,7 +96,7 @@
     <string name="str_public_cancel">取消</string>
     <string name="str_public_delete">删除</string>
     <string name="str_lable_selection01">软件拨号</string>
-    <string name="str_lable_selection02">本地拨号</string>
+    <string name="str_lable_selection02">手机拨号</string>
     <string name="str_lable_01">再按一次退出程序</string>
     <string name="str_lable_02">中国移动</string>
     <string name="str_lable_0３">请稍等</string>

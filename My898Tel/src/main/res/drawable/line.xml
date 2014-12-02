@@ -8,5 +8,5 @@
         android:color="@color/colordedfe0"
         />
 
-    <size android:height="1dip" />
+    <size android:height="2dip" />
 </shape>

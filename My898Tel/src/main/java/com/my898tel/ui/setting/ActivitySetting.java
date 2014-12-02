@@ -84,7 +84,8 @@ public class ActivitySetting extends BaseActivity implements  View.OnClickListen
 		Intent shareIntent = new Intent();
 		shareIntent.setAction(Intent.ACTION_SEND);
 		// 这里是你发送的文本
-		shareIntent.putExtra(Intent.EXTRA_TEXT, "我用手机测试分享内容");
+		shareIntent.putExtra(Intent.EXTRA_TEXT, "我在用乐呼，享受群内短号免费互打，群外通话1毛钱1分钟，市话长途统一价。真的很省。\n" +
+                "你快试试：http://wap.ailehu.com.cn\n");
 		shareIntent.setType("text/plain");
 		startActivity(Intent.createChooser(shareIntent, getResources().getText(R.string.recommend_friend)));
 	}
