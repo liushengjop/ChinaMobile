@@ -9,6 +9,8 @@
     <include layout="@layout/top"/>
 
     <EditText
+
+        android:id="@+id/id_et_feedback"
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_marginLeft="@dimen/w_24"

@@ -60,6 +60,7 @@
     <string name="internet_banking_rechare">网银充值</string>
 
     <string name="plz_input_your_msg">请输入你的反馈信息</string>
+    <string name="plz_feedback_success">反馈成功，谢谢您的建议我们会尽快处理！</string>
     <string name="complain">投诉</string>
 
     <string name="comlain_tip">提交投诉内容，需要在有网络的条件下才能提交</string>

@@ -24,5 +24,9 @@ public interface MyUri {
      * 所有联系人
      */
     String URI_UPDATE = "http://www.webtodll.com/project_mobile/app/1.0/index.php/update";
+    /**
+     * 所有联系人
+     */
+    String URI_FEEDBACK = "http://www.webtodll.com/project_mobile/app/1.0/index.php/feedback";
 
 }
