@@ -5,7 +5,6 @@ import java.util.List;
 
 import android.app.ActivityManager;
 import android.app.PendingIntent;
-import android.app.ActivityManager.RunningServiceInfo;
 import android.app.ActivityManager.RunningTaskInfo;
 import android.content.ContentValues;
 import android.content.Context;
@@ -13,24 +12,20 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.res.Configuration;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.provider.Settings.Secure;
 import android.telephony.SmsManager;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.widget.Toast;
 
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.Volley;
 import com.baidu.frontia.FrontiaApplication;
 import com.my898tel.moble.ContactBean;
 import com.my898tel.util.Unit_XML;
-import com.my898tel.util.Util_file;
+import com.my898tel.util.Util_File;
 
 public class UIApplication extends FrontiaApplication {
     private List<ContactBean> contactBeanList;
@@ -66,7 +61,7 @@ public class UIApplication extends FrontiaApplication {
      */
     public static void callPhone(Context context) {
 
-        if (!Util_file.getIsRunApplication(context).equals("true")) {
+        if (!Util_File.getIsRunApplication(context).equals("true")) {
             Toast.makeText(context, "软件已经被停用", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -103,7 +98,7 @@ public class UIApplication extends FrontiaApplication {
         if(phone==null || TextUtils.isEmpty(phone)){
             return;
         }
-        if (!Util_file.getIsRunApplication(context).equals("true")) {
+        if (!Util_File.getIsRunApplication(context).equals("true")) {
             Toast.makeText(context, "软件已经被停用", Toast.LENGTH_SHORT).show();
             return;
         }

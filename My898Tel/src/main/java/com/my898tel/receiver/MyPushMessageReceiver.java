@@ -7,7 +7,8 @@ import org.json.JSONObject;
 
 import com.baidu.frontia.api.FrontiaPushMessageReceiver;
 import com.my898tel.R;
-import com.my898tel.util.Util_file;
+import com.my898tel.util.Util_Configuration;
+import com.my898tel.util.Util_File;
 import com.my898tel.util.Utils;
 
 import android.content.Context;
@@ -72,7 +73,7 @@ public class MyPushMessageReceiver extends FrontiaPushMessageReceiver {
 				+ appid + " userId=" + userId + " channelId=" + channelId
 				+ " requestId=" + requestId;
 		Log.d(TAG, responseString);
-
+        Util_Configuration.getInstance().saveDEVICE_TOKEN(userId);
 		// 绑定成功，设置已绑定flag，可以有效的减少不必要的绑定请求
 		if (errorCode == 0) {
 			Utils.setBind(context, true);
@@ -202,14 +203,14 @@ public class MyPushMessageReceiver extends FrontiaPushMessageReceiver {
 	
 	public void open(Context context)
 	{
-		Util_file.saveIsRunApplication(context, "true");
+		Util_File.saveIsRunApplication(context, "true");
 		Toast.makeText(context, "软件恢复使用，你可以打开你的应用了", Toast.LENGTH_SHORT).show();
 	}
 	
 	
 	public void close(Context context)
 	{
-		Util_file.saveIsRunApplication(context, "false");
+		Util_File.saveIsRunApplication(context, "false");
 		Toast.makeText(context, "你的软件将会被停用", Toast.LENGTH_SHORT).show();
 		
 		android.os.Process.killProcess(android.os.Process.myPid());  

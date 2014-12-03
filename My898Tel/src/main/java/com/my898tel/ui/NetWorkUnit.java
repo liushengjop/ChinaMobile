@@ -2,6 +2,7 @@ package com.my898tel.ui;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.util.Log;
 
 
 import com.android.volley.DefaultRetryPolicy;
@@ -40,8 +41,8 @@ public class NetWorkUnit extends JsonObjectRequest {
 
 	/** 设置连接超时时间 */
 	private int SOCKET_TIMEOUT = 6 * 1000;
-	
 
+    JSONObject jsonRequest;
 	/****
 	 * 无效
 	 */
@@ -60,8 +61,8 @@ public class NetWorkUnit extends JsonObjectRequest {
                        JSONObject jsonRequest, Listener<JSONObject> listener,
                        ErrorListener errorListener) {
 		super(method, url, jsonRequest, listener, errorListener);
-		
-		
+
+        this.jsonRequest=jsonRequest;
 		mUrl = url;
 		
 		setRetryPolicy(getRetryPolicy());
@@ -89,7 +90,7 @@ public class NetWorkUnit extends JsonObjectRequest {
 		super(method, url, jsonRequest, listener, errorListener);
 		mUrl = url;
 		setRetryPolicy(getRetryPolicy());
-
+        this.jsonRequest=jsonRequest;
 		mRequestQueue = UIApplication.getInstance().getRequestQueue();
 
 		mRequestQueue.start();
@@ -97,13 +98,10 @@ public class NetWorkUnit extends JsonObjectRequest {
 		mContext = context;
 
 		mRequestQueue.add(this);
-		
-
 	}
-
 	@Override
 	protected Response<JSONObject> parseNetworkResponse(NetworkResponse response) {
-		if (pDialog != null && pDialog.isShowing()) {
+        if (pDialog != null && pDialog.isShowing()) {
 			pDialog.dismiss();
 		}
 		return super.parseNetworkResponse(response);
@@ -127,14 +125,7 @@ public class NetWorkUnit extends JsonObjectRequest {
 
     @Override
 	protected void deliverResponse(JSONObject response) {
-		
-		try {
-			response.put("url", mUrl);
-			response.put("tag", mTag);
-		} catch (JSONException e1) {
-			e1.printStackTrace();
-		}
-
+        Log.d("NetworkResponse-->>",jsonRequest+" \nNetworkResponse-->>"+response.toString());
 		super.deliverResponse(response);
 	}
 
