@@ -96,7 +96,7 @@ public class BaseFragment extends Fragment implements  Response.ErrorListener,Re
     protected  NetWorkUnit netWorkUnit;
 
     public void submit(int tag,String url,JSONObject obj){
-        netWorkUnit = new NetWorkUnit(BaseActivity.this, Request.Method.POST,url,obj,this,this);
+        netWorkUnit = new NetWorkUnit(getActivity(), Request.Method.POST,url,obj,this,this);
         netWorkUnit.setmTag(tag);
     }
 
