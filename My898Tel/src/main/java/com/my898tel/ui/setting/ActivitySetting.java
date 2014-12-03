@@ -4,6 +4,7 @@ package com.my898tel.ui.setting;
 import com.my898tel.R;
 import com.my898tel.UIApplication;
 import com.my898tel.config.MyUri;
+import com.my898tel.moble.CheckUpdate;
 import com.my898tel.ui.BaseActivity;
 import com.my898tel.ui.MainActivity;
 import com.my898tel.ui.RegisterActivity;
@@ -12,8 +13,10 @@ import com.my898tel.ui.dialog.DialogLoading;
 import com.my898tel.ui.message.MessageDetail;
 import com.my898tel.ui.recharge.ActivityChinaMoble;
 import com.my898tel.ui.recharge.ActivityRecharge;
+import com.my898tel.ui.widget.UpdateFragment;
 import com.my898tel.util.AppManager;
 import com.my898tel.util.Unit_XML;
+import com.my898tel.util.Util_Configuration;
 import com.my898tel.util.Util_G;
 
 import android.app.Dialog;
@@ -79,7 +82,7 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
         findViewById(R.id.relat_complain).setOnClickListener(this);
         findViewById(R.id.relat_about).setOnClickListener(this);
         findViewById(R.id.relat_help).setOnClickListener(this);
-        tv_over = (TextView) findViewById(R.id.tv_over);
+        tv_over = (TextView) findViewById(R.id.id_tv_over);
         setTitleNoRightBtn(R.string.setting);
         if (Unit_XML.getOpenCount() == 0) {
             ib_left.setOnClickListener(new View.OnClickListener() {
@@ -149,6 +152,8 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
                     editText.setBackgroundColor(Color.TRANSPARENT);
                     editText.setMinHeight(Util_G.dip2px(35));
                     editText.setInputType(InputType.TYPE_CLASS_PHONE);
+                    editText.setText(Util_Configuration.getInstance().getMobile());
+                    editText.setSelection(editText.getText().length());
                     InputFilter[] filterArray = new InputFilter[1];
                     filterArray[0] = new InputFilter.LengthFilter(11);
                     editText.setFilters(filterArray);
@@ -170,7 +175,7 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
-
+                                Util_Configuration.getInstance().saveMobile(text);
                                 submit(1, MyUri.URI_LEFT_MONEY, jsonObject);
                             }
                         }
@@ -186,7 +191,6 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
                 handler.sendEmptyMessageDelayed(WHATSEARCH, 15000);
                 break;
             case R.id.linear_cancle_cornet:
-
                 DialogCustomeFragment.Builder builder = new DialogCustomeFragment.Builder();
                 builder.setTitle(getString(R.string.cancle_cornet));
                 builder.setMessage(getString(R.string.cancle_cornet_cotent));
@@ -205,16 +209,7 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
                 builder.show(getSupportFragmentManager(), DialogCustomeFragment.class.getName());
                 break;
             case R.id.linear_check_version:
-                DialogCustomeFragment.Builder builderCheckUpdate = new DialogCustomeFragment.Builder();
-                builderCheckUpdate.setTitle(getString(R.string.check_version));
-                builderCheckUpdate.setMessage(getString(R.string.cancle_cornet_cotent));
-                builderCheckUpdate.setBtn1(getString(R.string.sure), new DialogCustomeFragment.Listener() {
-                    @Override
-                    public void onClick(Dialog dialog) {
-                        dialog.dismiss();
-                    }
-                });
-                builderCheckUpdate.show(getSupportFragmentManager(), DialogCustomeFragment.class.getName());
+                submit(2, MyUri.URI_UPDATE, null);
                 break;
             case R.id.linear_share:
                 share();
@@ -240,19 +235,43 @@ public class ActivitySetting extends BaseActivity implements View.OnClickListene
     @Override
     public void onResponse(JSONObject jsonObject) {
         super.onResponse(jsonObject);
-        Log.d("JSONObject-->>", jsonObject.toString());
         if (netWorkUnit.getmTag() == 1) {
             try {
                 int desc = jsonObject.getInt("desc");
                 if (desc > 0) {
-                    tv_over.setText(getString(R.string.over_point_unit,desc));
+                    tv_over.setText(getString(R.string.over_point_unit, desc));
+                } else {
+                    tv_over.setText("");
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        } else if (netWorkUnit.getmTag() == 2) {
+            try {
+                JSONObject jsonObject1=jsonObject.getJSONObject("version");
+                int status = jsonObject1.getInt("status");
+//                status 2 强制  1 可选 0 不升级
+                if (status!=0){
+                    String  url = jsonObject1.getString("url");
+                    String desc = jsonObject1.getString("desc");
+                    CheckUpdate checkUpdate=new CheckUpdate(status,url,desc);
+                    UpdateFragment.newInstance().show(getSupportFragmentManager(),checkUpdate,true);
+                }else {
+                    DialogCustomeFragment.Builder builderCheckUpdate = new DialogCustomeFragment.Builder();
+                    builderCheckUpdate.setTitle(getString(R.string.check_version));
+                    builderCheckUpdate.setMessage(getString(R.string.str_isLatestVersion));
+                    builderCheckUpdate.setBtn1(getString(R.string.sure), new DialogCustomeFragment.Listener() {
+                        @Override
+                        public void onClick(Dialog dialog) {
+                            dialog.dismiss();
+                        }
+                    });
+                    builderCheckUpdate.show(getSupportFragmentManager(), DialogCustomeFragment.class.getName());
                 }
 
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
-
         }
 
 

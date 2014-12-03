@@ -50,7 +50,7 @@
     <string name="tip_plz_input_complet">请填写完整</string>
     <string name="cancle_cornet_cotent">取消短号，省话费将不再继续。是否取消？</string>
     <string name="over_point">查询余额</string>
-    <string name="over_point_unit">%1s 元</string>
+    <string name="over_point_unit">%1$d 元</string>
     <string name="recommend_friend">推荐给好友</string>
     <string name="help">帮助</string>
     <string name="about">关于我们</string>
@@ -121,5 +121,18 @@
 
     <string name="url03">http://zz.1110086.com/alipay/alipayto.jsp?subject=%1s
         </string>
+    <string name="str_public_know">我知道啦</string>
+    <string name="str_public_know_">知道啦</string>
+    <string name="str_logo_update">更新</string>
+    <string name="str_logo_update_fail_01">存储空间不足，更新失败。</string>
+    <string name="str_logo_update_fail_02">服务器忙，请到官网下载更新。</string>
+    <string name="str_logo_optional_update_prompt">新版本信息获取中…</string>
+    <string name="str_logo_update_now">马上更新</string>
+    <string name="str_logo_deal_with_later">稍后再说</string>
+    <string name="str_logo_update_progress">版本更新进度提示</string>
+    <string name="str_logo_update_progress_loading">已为你载入了：%1$s</string>
+    <string name="str_logo_programe_update">软件升级</string>
+    <string name="wraning05">请安装网络浏览器!</string>
+    <string name="str_isLatestVersion">已是最新版本！</string>
 
 </resources>

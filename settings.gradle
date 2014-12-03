@@ -2,3 +2,4 @@
 include ':My898Tel'
 include ':Android-SlideExpandableListView'
 include ':Android-PullToRefresh'
+include ':app'

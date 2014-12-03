@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.my898tel"
     android:versionCode="1"
-    android:versionName="1.0.0" >
+    android:versionName="1.0.0">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -39,21 +39,21 @@
     <!-- 弹出全局提示框 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
 
-    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <application
         android:name="com.my898tel.UIApplication"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:allowTaskReparenting="true"
-        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        android:theme="@android:style/Theme.Black.NoTitleBar">
         <activity
             android:name="com.my898tel.ui.Loading"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -90,7 +90,8 @@
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name="com.my898tel.ui.setting.ActivitySetting"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
 
         <activity
             android:name="com.my898tel.ui.setting.ActivtyHelp"
@@ -102,19 +103,21 @@
             android:name="com.my898tel.ui.setting.ActivityComplain"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".ui.ActivityFirst"
-            android:screenOrientation="portrait"/>
-<!--         <activity
-            android:name="com.my898tel.ui.SelectDialog"
-            android:screenOrientation="portrait"
-            android:theme="@style/ThemeCustomBootmDialog" >
-            <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> -->
+        <activity
+            android:name=".ui.ActivityFirst"
+            android:screenOrientation="portrait" />
+        <!--         <activity
+                    android:name="com.my898tel.ui.SelectDialog"
+                    android:screenOrientation="portrait"
+                    android:theme="@style/ThemeCustomBootmDialog" >
+                    <intent-filter>
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity> -->
 
-        <activity android:name=".ui.recharge.ActivityRecharge"
-                android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.recharge.ActivityRecharge"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.my898tel.ui.recharge.ActivityChinaMoble"
             android:screenOrientation="portrait"
@@ -124,16 +127,18 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
-        <activity android:name=".ui.recharge.ActivityPayPal"
+        <activity
+            android:name=".ui.recharge.ActivityPayPal"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden"/>
+            android:windowSoftInputMode="adjustPan|stateHidden" />
 
 
-        <activity android:name=".ui.recharge.ActivityWebView"
+        <activity
+            android:name=".ui.recharge.ActivityWebView"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateHidden"/>
+            android:windowSoftInputMode="adjustPan|stateHidden" />
 
-        <receiver android:name="com.my898tel.receiver.OutgoingCallReceiver" >
+        <receiver android:name="com.my898tel.receiver.OutgoingCallReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
 
@@ -143,37 +148,36 @@
 
         <!--&lt;!&ndash;生成桌面快捷方式&ndash;&gt;-->
         <!--<receiver-->
-            <!--android:name="com.android.zkx_launcher.InstallShortcutReceiver"-->
-            <!--android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.android.launcher.action.INSTALL_SHORTCUT"/>-->
-            <!--</intent-filter>-->
+        <!--android:name="com.android.zkx_launcher.InstallShortcutReceiver"-->
+        <!--android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.android.launcher.action.INSTALL_SHORTCUT"/>-->
+        <!--</intent-filter>-->
         <!--</receiver>-->
-
 
 
         <!-- 	 <service android:name="com.my898tel.receiver.ServiceForTel"></service>
         -->
- 	 <!-- 开机启动服务 -->
-<!--   	 <receiver android:name="com.my898tel.receiver.ReceiverBootCompleted" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <!-- 开机启动服务 -->
+        <!--   	 <receiver android:name="com.my898tel.receiver.ReceiverBootCompleted" >
+                    <intent-filter>
+                        <action android:name="android.intent.action.BOOT_COMPLETED" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver> -->
-        
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+                </receiver> -->
+
         <!-- 开屏启动 -->
-<!--         <receiver android:name="com.my898tel.receiver.ScreenBroadcastReceiver">
-            <intent-filter >
-                <action android:name="android.intent.action.SCREEN_ON"/>  
-                <action android:name="android.intent.action.SCREEN_OFF"/>  
-                <action android:name="android.intent.action.USER_PRESENT"/>
-            </intent-filter>
-        </receiver> -->
+        <!--         <receiver android:name="com.my898tel.receiver.ScreenBroadcastReceiver">
+                    <intent-filter >
+                        <action android:name="android.intent.action.SCREEN_ON"/>
+                        <action android:name="android.intent.action.SCREEN_OFF"/>
+                        <action android:name="android.intent.action.USER_PRESENT"/>
+                    </intent-filter>
+                </receiver> -->
 
         <!-- push应用定义消息receiver声明 -->
-        <receiver android:name="com.my898tel.receiver.MyPushMessageReceiver" >
+        <receiver android:name="com.my898tel.receiver.MyPushMessageReceiver">
             <intent-filter>
 
                 <!-- 接收push消息 -->
@@ -186,7 +190,7 @@
         <!-- push必须的receviver和service声明 -->
         <receiver
             android:name="com.baidu.android.pushservice.PushServiceReceiver"
-            android:process=":bdservice_v1" >
+            android:process=":bdservice_v1">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
@@ -196,7 +200,7 @@
         </receiver>
         <receiver
             android:name="com.baidu.android.pushservice.RegistrationReceiver"
-            android:process=":bdservice_v1" >
+            android:process=":bdservice_v1">
             <intent-filter>
                 <action android:name="com.baidu.android.pushservice.action.METHOD" />
                 <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
@@ -259,7 +263,9 @@
             android:value="true" />
         <!-- end -->
         <!-- 在百度开发者中心查询应用的API Key -->
-        <meta-data android:name="baidu_push_api_key" android:value="BAIDU_PUSH_API_KEY" />
+        <meta-data
+            android:name="baidu_push_api_key"
+            android:value="BAIDU_PUSH_API_KEY" />
     </application>
 
 </manifest>

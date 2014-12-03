@@ -106,11 +106,11 @@
 
 
                 <TextView
-                    android:id="@+id/tv_over"
+                    android:id="@+id/id_tv_over"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/tv_search_over"
-                    android:text="@string/over_point_unit"
+                    android:text=""
                     android:textColor="@color/color697a7c"
                     android:textSize="@dimen/size_13"
                     android:textStyle="bold" />

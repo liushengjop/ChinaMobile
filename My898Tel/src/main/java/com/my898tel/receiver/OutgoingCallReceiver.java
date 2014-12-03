@@ -1,9 +1,8 @@
 package com.my898tel.receiver;
 
 import com.my898tel.R;
-import com.my898tel.UIApplication;
 import com.my898tel.util.Unit_XML;
-import com.my898tel.util.Util_file;
+import com.my898tel.util.Util_File;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -22,7 +21,7 @@ public class OutgoingCallReceiver extends BroadcastReceiver {
 
 	public void onReceive(Context context, Intent intent) {
 		
-		if(!Util_file.getIsRunApplication(context).equals("true"))
+		if(!Util_File.getIsRunApplication(context).equals("true"))
 		{
 			Toast.makeText(context, "软件已经被停用", Toast.LENGTH_SHORT).show();
 			return;
